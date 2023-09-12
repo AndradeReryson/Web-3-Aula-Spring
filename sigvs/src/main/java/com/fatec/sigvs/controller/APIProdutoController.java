@@ -15,6 +15,7 @@ import com.fatec.sigvs.servico.IProdutoServico;
 @RequestMapping("/api/v1/produtos")
 		public class APIProdutoController {
 		Logger logger = LogManager.getLogger(this.getClass());
+		
 		@Autowired
 		IProdutoServico produtoServico;
 		/**
