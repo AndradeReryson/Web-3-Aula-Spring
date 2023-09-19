@@ -31,14 +31,16 @@ public class ProdutoServico implements IProdutoServico {
 		
 		for(Produto p : listaP) {
 			for(Imagem i : listaI) {
-				 cat = new Catalogo(
-						 p.getId(), 
-						 p.getDescricao(), 
-						 p.getCategoria(), 
-						 p.getQtdeEstoque(), 
-						 i.getArquivo()
-				);
-				listaC.add(cat);
+				if(p.getId().equals(i.getId())) {
+					cat = new Catalogo(
+							 p.getId(), 
+							 p.getDescricao(), 
+							 p.getCategoria(), 
+							 p.getQtdeEstoque(), 
+							 i.getArquivo()
+					);
+					listaC.add(cat);
+				}
 			}
 		}
 		

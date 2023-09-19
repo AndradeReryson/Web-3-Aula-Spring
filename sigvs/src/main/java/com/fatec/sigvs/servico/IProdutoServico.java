@@ -7,7 +7,7 @@ import com.fatec.sigvs.model.Catalogo;
 import com.fatec.sigvs.model.Produto;
 
 public interface IProdutoServico {
-	public List<Catalogo> consultaCatalogo();
+	public List<Catalogo> consultaCatalogo(); // Catalogo
 
 	public List<Produto> consultaPorDescricao();
 

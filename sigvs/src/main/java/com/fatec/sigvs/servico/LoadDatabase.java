@@ -37,6 +37,7 @@ public class LoadDatabase {
 					40);
 			repository.saveAll(Arrays.asList(produto1, produto2, produto3));
 			logger.info(">>>>> loaddatabase -> cadastro de 3 produtos realizado.");
+			
 			// ****************************************************************
 			// upload - obtem a imagem do c, atribui ao obj imagem e salva no db do servidor
 			// ****************************************************************
@@ -72,6 +73,7 @@ public class LoadDatabase {
 			imagem.setArquivo(arquivo3);
 			logger.info(">>>>> loaddatabase -> upload de arquivo imagem realizado => " + arquivo3.length);
 			imagemRepository.save(imagem);
+			
 		};
 
 	}
